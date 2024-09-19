@@ -20,7 +20,7 @@ public class Coins
     int theFinal = semiFinal - (nickelNum * 5);
     int pennyNum = theFinal%1;
     System.out.println(dollarBills + " " + quaterNum + " " + dimeNum + " " + nickelNum + " " + pennyNum);
-    
+  } 
     
 
 }
