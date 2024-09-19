@@ -6,7 +6,7 @@ public class Coins
   }
 
   // write code for coinConverter
-  public static String coinConverter(double a)
+  public static void coinConverter(double a)
   {
     double money = (int)(a/(100);
     int dollarBills = (int)(money);
