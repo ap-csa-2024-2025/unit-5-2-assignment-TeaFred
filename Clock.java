@@ -2,9 +2,17 @@ public class Clock
 {
   public static void main(String[] args)
   {
-    // test code here
+    timeofDay(0);
   }
 
-  // write code for timeOfDay here
+  public static String timeofDay(int a)
+  {
+    int modtime = a%12; 
+    int noonorNot = a/12;
+  }
 
+  public static 
+  
+
+  
 }
