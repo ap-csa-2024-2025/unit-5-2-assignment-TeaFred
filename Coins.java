@@ -17,6 +17,4 @@ public class Coins
     int pennyNum = theFinal/1;
     System.out.println(dollarBills + " " + quarterNum + " " + dimeNum + " " + nickelNum + " " + pennyNum);
   } 
-    
-
 }
