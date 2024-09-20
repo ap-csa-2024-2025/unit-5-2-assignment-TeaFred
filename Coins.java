@@ -13,13 +13,13 @@ public class Coins
     double coinChange = money - (int)dollarBills; 
     int toInt = (int)(coinChange * 100);
     int quarterNum = toInt%25; 
-    int almFinal = toInt - (quarternum*25);
+    int almFinal = toInt - (quarterNum*25);
     int dimeNum = almFinal%10; 
     int semiFinal = almFinal - (dimeNum*10);
     int nickelNum = semiFinal%5;
     int theFinal = semiFinal - (nickelNum * 5);
     int pennyNum = theFinal%1;
-    System.out.println(dollarBills + " " + quaterNum + " " + dimeNum + " " + nickelNum + " " + pennyNum);
+    System.out.println(dollarBills + " " + quarterNum + " " + dimeNum + " " + nickelNum + " " + pennyNum);
   } 
     
 
