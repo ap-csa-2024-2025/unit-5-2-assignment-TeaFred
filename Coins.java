@@ -4,21 +4,17 @@ public class Coins
   {
     coinConverter(1234);
   }
-
-  // write code for coinConverter
-  public static void coinConverter(double a)
+  public static void coinConverter(int a)
   {
-    double money = (int)(a/(100));
-    int dollarBills = (int)(money);
-    double coinChange = money - (int)dollarBills; 
-    int toInt = (int)(coinChange * 100);
-    int quarterNum = toInt%25; 
-    int almFinal = toInt - (quarterNum*25);
-    int dimeNum = almFinal%10; 
+    int dollarBills = (a/100);
+    int coinChange = a - (dollarBills*100); 
+    int quarterNum = coinChange/25; 
+    int almFinal = coinChange - (quarterNum*25);
+    int dimeNum = almFinal/10; 
     int semiFinal = almFinal - (dimeNum*10);
-    int nickelNum = semiFinal%5;
+    int nickelNum = semiFinal/5;
     int theFinal = semiFinal - (nickelNum * 5);
-    int pennyNum = theFinal%1;
+    int pennyNum = theFinal/1;
     System.out.println(dollarBills + " " + quarterNum + " " + dimeNum + " " + nickelNum + " " + pennyNum);
   } 
     
